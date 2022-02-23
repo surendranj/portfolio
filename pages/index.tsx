@@ -5,6 +5,7 @@ import Header from "../src/components/Header";
 import { NavProvider } from "../src/components/Nav/NavContext";
 import HeroSection from "../src/components/Hero/HeroSection";
 import AboutMe from "../src/components/AboutMe/AboutMe";
+import Projects from "../src/components/Projects/Projects";
 
 const Home: NextPage = () => {
     return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
                 <main>
                     <HeroSection />
                     <AboutMe />
+                    <Projects />
                 </main>
             </div>
         </NavProvider>
