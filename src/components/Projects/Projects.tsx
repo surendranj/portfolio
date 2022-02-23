@@ -41,7 +41,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <Container className="w-full flex flex-wrap justify-between gap-10 ">
+        <Container id="projects" className="w-full flex flex-wrap justify-between gap-10 ">
             {projects.map((project, idx) => (
                 <ProjectCard key={idx} {...project} />
             ))}
