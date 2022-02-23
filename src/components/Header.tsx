@@ -1,8 +1,7 @@
-import { ReactNode } from "react";
 import { ChildrenProps } from "../types";
 
 const Header = ({ children }: ChildrenProps) => {
-    return <header>{children}</header>;
+    return <header className="sticky top-0">{children}</header>;
 };
 
 export default Header;

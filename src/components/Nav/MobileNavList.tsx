@@ -19,9 +19,15 @@ const MobileNavList = ({ className }: MobileNavListProps) => {
             transition={{ type: "spring", stiffness: 70 }}
             className={mobNavListStyles + className}
         >
-            <MobNavListItem>About Me</MobNavListItem>
-            <MobNavListItem>Projects</MobNavListItem>
-            <MobNavListItem>Contact</MobNavListItem>
+            <MobNavListItem>
+                <a href="#about-me">About Me</a>
+            </MobNavListItem>
+            <MobNavListItem>
+                <a href="#projects">Projects</a>
+            </MobNavListItem>
+            <MobNavListItem>
+                <a href="contact">Contact</a>
+            </MobNavListItem>
         </motion.ul>
     );
 };

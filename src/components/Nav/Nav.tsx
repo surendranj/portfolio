@@ -6,7 +6,7 @@ import Container from "../Container";
 
 const Nav = () => {
     return (
-        <Container className="bg-primary h-14 relative">
+        <Container className="bg-primary h-[9vh] relative">
             <nav className="h-full flex flex-row justify-between text-white z-0">
                 <Logo />
                 <NavList />

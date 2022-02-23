@@ -3,6 +3,7 @@ import Head from "next/head";
 import Nav from "../src/components/Nav/Nav";
 import Header from "../src/components/Header";
 import { NavProvider } from "../src/components/Nav/NavContext";
+import HeroSection from "../src/components/Hero/HeroSection";
 
 const Home: NextPage = () => {
     return (
@@ -15,6 +16,9 @@ const Home: NextPage = () => {
                 <Header>
                     <Nav />
                 </Header>
+                <main>
+                    <HeroSection />
+                </main>
             </div>
         </NavProvider>
     );
