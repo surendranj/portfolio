@@ -10,7 +10,7 @@ const NavList = () => {
                 <a href="#projects">Projects</a>
             </NavListItem>
             <NavListItem>
-                <a href="contact">Contact</a>
+                <a href="#contact">Contact</a>
             </NavListItem>
         </ul>
     );

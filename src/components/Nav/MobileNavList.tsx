@@ -26,7 +26,7 @@ const MobileNavList = ({ className }: MobileNavListProps) => {
                 <a href="#projects">Projects</a>
             </MobNavListItem>
             <MobNavListItem>
-                <a href="contact">Contact</a>
+                <a href="#contact">Contact</a>
             </MobNavListItem>
         </motion.ul>
     );

@@ -9,8 +9,7 @@ const projects = [
     {
         imgSrc: marvel,
         title: "Marvel Explorer",
-        description:
-            "Exploring Marvel Comics using the marvel comics API. Features include responsive design, infinite scrolling with intersection observer API,data caching with React Query, binary search to remove duplicate data and hero/comics search functionality.",
+        description: `Exploring Marvel Comics using the <a href="https://developer.marvel.com/">marvel comics API. Features include responsive design, infinite scrolling with intersection observer API,data caching with React Query, binary search to remove duplicate data and hero/comics search functionality.`,
         projectSrc: "https://marvel-comics-explorer.vercel.app/",
         githubSrc: "https://github.com/surendranj/marvel-comics-explorer",
     },
@@ -41,7 +40,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <Container id="projects" className="w-full flex flex-wrap justify-between gap-10 ">
+        <Container id="projects" className="w-full flex flex-wrap justify-between gap-10 pb-10">
             {projects.map((project, idx) => (
                 <ProjectCard key={idx} {...project} />
             ))}

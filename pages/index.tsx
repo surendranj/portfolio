@@ -7,6 +7,8 @@ import Header from "../src/components/Header";
 import HeroSection from "../src/components/Hero/HeroSection";
 import AboutMe from "../src/components/AboutMe/AboutMe";
 import Projects from "../src/components/Projects/Projects";
+import Footer from "../src/components/Footer";
+import ContactMe from "../src/components/ContactMe/ContactMe";
 
 const Home: NextPage = () => {
     const { setToggleNavList } = useContext(NavContext)!;
@@ -25,6 +27,9 @@ const Home: NextPage = () => {
                 <AboutMe />
                 <Projects />
             </main>
+            <Footer>
+                <ContactMe />
+            </Footer>
         </div>
     );
 };
