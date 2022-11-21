@@ -8,7 +8,14 @@ module.exports = {
             laptop: "1024px",
             desktop: "1280px",
         },
-        extend: {},
+        extend: {
+            colors: {
+                mud: "#494037",
+                darkOcean: "#373F45",
+                salt: "#E2E6E8",
+                algae: "#3E3521",
+            },
+        },
     },
     plugins: [],
 };
