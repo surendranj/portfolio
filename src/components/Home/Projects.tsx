@@ -8,7 +8,7 @@ const projectData = [
         img: "primax.png",
         description:
             "Primax - A fully responsive movie app created with Nextjs, Redux Toolkit, Tailwindcss and Typescript. Includes Firebase authentication and search functionality.",
-        projectLink: "https://primax.vercel.app/",
+        projectLink: "https://primax-685eb.web.app/",
         githubLink: "https://github.com/surendranj/primax",
     },
     {
