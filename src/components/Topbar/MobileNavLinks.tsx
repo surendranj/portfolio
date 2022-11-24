@@ -25,7 +25,9 @@ const MobileNavLinks = ({ openNav, setOpenNav }: MobileNavLinksProps) => {
                         </li>
                     ))}
                     <li onClick={() => setOpenNav(false)} className="font-normal">
-                        <Ghost>Download CV</Ghost>
+                        <a href="/files/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <Ghost>Download CV</Ghost>
+                        </a>
                     </li>
                 </motion.ul>
             )}

@@ -40,7 +40,9 @@ const Topbar = () => {
                         </motion.li>
                     ))}
                     <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }} className="font-normal">
-                        <Ghost>Download CV</Ghost>
+                        <a href="/files/resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <Ghost>Download CV</Ghost>
+                        </a>
                     </motion.li>
                 </ul>
                 <motion.button onClick={() => setOpenNav(!openNav)} className="tablet:hidden">
