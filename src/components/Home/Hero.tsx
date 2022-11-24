@@ -16,7 +16,7 @@ const Hero = () => {
             </div>
             <div className=" relative z-10 flex flex-col items-center">
                 <div className="relative rounded-full w-32 h-32 overflow-hidden">
-                    <Image src={"/images/dp1.png"} alt="display picture" fill className="object-cover" sizes="20vw" />
+                    <Image src={"/images/dp.png"} alt="display picture" fill className="object-cover" sizes="20vw" />
                 </div>
                 <h1 className="mt-4">Surendran Jagadeesh</h1>
                 <span className="mt-2">Web Developer</span>
