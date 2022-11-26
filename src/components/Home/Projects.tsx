@@ -8,7 +8,7 @@ const projectData = [
         img: "primax.png",
         description:
             "Primax - A fully responsive movie app created with Nextjs, Redux Toolkit, Tailwindcss and Typescript. Includes Firebase authentication and search functionality.",
-        projectLink: "https://primax-685eb.web.app/",
+        projectLink: "https://primax.vercel.app/",
         githubLink: "https://github.com/surendranj/primax",
     },
     {
@@ -80,7 +80,14 @@ const Projects = () => {
         setClickDirection("right");
     };
     return (
-        <section id="projects" className="relative container overflow-hidden  ">
+        <motion.section
+            id="projects"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="overflow-hidden"
+        >
             <h2>Projects</h2>
             <AnimatePresence mode="wait" initial={false} custom={clickDirection}>
                 <motion.div
@@ -100,8 +107,8 @@ const Projects = () => {
                             className="object-contain"
                         />
                     </div>
-                    <p className="mb-2">{projectData[currentProj].description}</p>
-                    <div className="mt-4 flex gap-4 w-full max-w-md  justify-center mx-auto">
+                    <p className="container mb-2">{projectData[currentProj].description}</p>
+                    <div className="container mt-4 flex gap-4 w-full max-w-md  justify-center mx-auto">
                         <motion.a
                             href={projectData[currentProj].projectLink}
                             whileHover={{ scale: 1.1 }}
@@ -130,7 +137,7 @@ const Projects = () => {
                     <ChevronRight />
                 </button>
             </div>
-        </section>
+        </motion.section>
     );
 };
 
